@@ -1,9 +1,34 @@
 ---
 name: x-algorithm
 description: Write viral X posts using deep knowledge of the actual recommendation algorithm
-version: 1.2.0
+version: 1.2.1
 author: Claude
 invocation: /x-algorithm
+---
+
+## CRITICAL: Write Like a Human, Not AI
+
+**BEFORE writing ANY post, internalize these rules:**
+
+### NEVER Use These Words
+leverage, utilize, crucial, essential, vital, delve, dive into, landscape, ecosystem, transformative, groundbreaking, game-changing, unlock, pivotal, robust, comprehensive, Additionally, Furthermore, Moreover
+
+### NEVER Use These Patterns
+- Exactly 3 items in lists (vary: 2, 4, 5, 7)
+- "Not just X, but Y" constructions
+- "Here's the thing:", "Here's why:", "Here's what I learned:"
+- Multiple em dashes in one post
+- "Great question!", "I hope this helps!", "Success awaits!"
+
+### ALWAYS Do This
+- Use contractions (don't, it's, can't)
+- Include ONE specific detail (numbers, names, dates)
+- Write like you'd text a friend
+- Allow imperfection—fragments okay, tangents okay
+- Vary sentence length unpredictably
+
+**If your draft uses ANY banned word or pattern, rewrite it.**
+
 ---
 
 # X Algorithm Skill
