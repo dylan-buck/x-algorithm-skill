@@ -1,0 +1,37 @@
+{
+  "name": "x-algorithm-skill",
+  "version": "1.0.0",
+  "description": "Write viral X posts using deep knowledge of the actual recommendation algorithm",
+  "type": "module",
+  "bin": {
+    "x-algorithm-skill": "./bin/x-algorithm-skill.cjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "install.sh"
+  ],
+  "keywords": [
+    "x",
+    "twitter",
+    "algorithm",
+    "viral",
+    "social-media",
+    "claude",
+    "claude-code",
+    "skill"
+  ],
+  "author": "Dylan Buck",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dylan-buck/x-algorithm-skill"
+  },
+  "homepage": "https://github.com/dylan-buck/x-algorithm-skill#readme",
+  "bugs": {
+    "url": "https://github.com/dylan-buck/x-algorithm-skill/issues"
+  }
+}
