@@ -1,0 +1,44 @@
+---
+import CodeBlock from "./CodeBlock.astro";
+---
+
+<section id="usage" class="border-t border-zinc-200">
+  <div class="mx-auto max-w-5xl px-6 py-16">
+    <h2 class="text-2xl font-semibold text-zinc-900 text-balance">Usage</h2>
+    <p class="mt-4 text-zinc-600 text-pretty">
+      Use the skill in Claude Code to get algorithm-backed guidance for your posts.
+    </p>
+
+    <div class="mt-8 space-y-8">
+      <div>
+        <h3 class="text-lg font-medium text-zinc-900">Rewrite for Virality</h3>
+        <p class="mt-2 text-sm text-zinc-600 text-pretty">
+          Get an algorithm-optimized rewrite of your post with maximum engagement potential.
+        </p>
+        <div class="mt-4">
+          <CodeBlock code={`/x-algorithm rewrite\n\nHere's my post: [your post]`} />
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-medium text-zinc-900">Review a Draft</h3>
+        <p class="mt-2 text-sm text-zinc-600 text-pretty">
+          Get algorithm-backed feedback on your draft with specific improvements.
+        </p>
+        <div class="mt-4">
+          <CodeBlock code={`/x-algorithm review\n\nHere's my draft: [your draft]`} />
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-medium text-zinc-900">Get Writing Guidance</h3>
+        <p class="mt-2 text-sm text-zinc-600 text-pretty">
+          View the full algorithm overview and writing guidance.
+        </p>
+        <div class="mt-4">
+          <CodeBlock code="/x-algorithm" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+---
+const links = [
+  { href: "https://github.com/dylan-buck/x-algorithm-skill", label: "GitHub" },
+  { href: "https://www.npmjs.com/package/x-algorithm-skill", label: "npm" },
+  { href: "https://github.com/dylan-buck/x-algorithm-skill/blob/main/LICENSE", label: "MIT License" },
+  { href: "/llms.txt", label: "llms.txt" },
+];
+---
+
+<footer class="border-t border-zinc-200 bg-zinc-50">
+  <div class="mx-auto max-w-5xl px-6 py-8">
+    <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
+      <p class="text-sm text-zinc-600 text-pretty">
+        Based on X's open-sourced recommendation algorithm.
+      </p>
+      <nav class="flex gap-6">
+        {links.map(({ href, label }) => (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-zinc-600 hover:text-zinc-900"
+          >
+            {label}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </div>
+</footer>

@@ -58,6 +58,18 @@ Here's my draft: [your draft]
 ```
 Get algorithm-backed feedback on your draft with specific improvements.
 
+### Rewrite for Maximum Virality
+```
+/x-algorithm rewrite
+
+Here's my post: [your post]
+```
+Get an algorithm-optimized rewrite of your post. Claude will:
+- Restructure for maximum dwell time
+- Add hooks that trigger replies and shares
+- Remove patterns that cause negative signals
+- Suggest optimal length and formatting
+
 ## The Algorithm in 60 Seconds
 
 1. **Discovery**: Two-tower neural network matches your post embedding to user interest embeddings. Posts similar to what users engaged with get retrieved.

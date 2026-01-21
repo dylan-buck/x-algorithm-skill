@@ -1,0 +1,145 @@
+---
+---
+
+<section id="discovery" class="border-t border-zinc-200">
+  <div class="mx-auto max-w-5xl px-6 py-16">
+    <h2 class="text-2xl font-semibold text-zinc-900 text-balance">Discovery & Retrieval</h2>
+    <p class="mt-4 text-zinc-600 text-pretty">
+      Before posts can be ranked, they must be retrieved. The algorithm uses a two-tower neural network to efficiently find relevant posts from millions of candidates.
+    </p>
+
+    <!-- Architecture Diagram -->
+    <div class="mt-8 overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-900 p-6">
+      <pre class="text-sm text-zinc-100 leading-relaxed"><code>┌─────────────────┐          ┌─────────────────┐
+│   USER TOWER    │          │ CANDIDATE TOWER │
+│                 │          │                 │
+│  User Features  │          │  Post Content   │
+│       +         │          │       +         │
+│  Engagement     │          │  Author Info    │
+│    History      │          │                 │
+│       ↓         │          │       ↓         │
+│  Transformer    │          │     MLP         │
+│       ↓         │          │       ↓         │
+│  L2 Normalize   │          │  L2 Normalize   │
+└────────┬────────┘          └────────┬────────┘
+         │                            │
+         └──────────┬─────────────────┘
+                    │
+            Dot Product Similarity
+                    ↓
+              Top-K Retrieval</code></pre>
+    </div>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-2">
+      <!-- User Tower -->
+      <div class="rounded-lg border border-zinc-200 bg-white p-6">
+        <h3 class="text-lg font-medium text-zinc-900">User Tower (Your Audience)</h3>
+        <p class="mt-2 text-sm text-zinc-600 text-pretty">
+          Encodes who a user is based on their features and engagement history. The algorithm looks at up to 128 recent interactions.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm text-zinc-600">
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-zinc-400"></span>
+            <span>Which posts they engaged with</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-zinc-400"></span>
+            <span>Which authors they engaged with</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-zinc-400"></span>
+            <span>What actions they took (like, reply, share)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-zinc-400"></span>
+            <span>Where they interacted (feed, notifications, search)</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Candidate Tower -->
+      <div class="rounded-lg border border-zinc-200 bg-white p-6">
+        <h3 class="text-lg font-medium text-zinc-900">Candidate Tower (Your Post)</h3>
+        <p class="mt-2 text-sm text-zinc-600 text-pretty">
+          Encodes each post as a point in high-dimensional space. Posts cluster by topic, style, and author.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm text-zinc-600">
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-zinc-400"></span>
+            <span>Post content embeddings</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-zinc-400"></span>
+            <span>Author embeddings and characteristics</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-zinc-400"></span>
+            <span>Processed through 2-layer MLP</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-zinc-400"></span>
+            <span>L2-normalized to unit sphere</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Network Types -->
+    <div class="mt-12 space-y-6">
+      <h3 class="text-lg font-medium text-zinc-900">In-Network vs Out-of-Network</h3>
+
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="rounded-lg border border-zinc-200 bg-white p-6">
+          <div class="flex items-center gap-2">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-green-100 text-green-700">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </span>
+            <h4 class="font-medium text-zinc-900">In-Network (Thunder)</h4>
+          </div>
+          <p class="mt-3 text-sm text-zinc-600 text-pretty">
+            Posts from accounts the user follows. Sub-millisecond lookup from in-memory store. <strong>No retrieval penalty.</strong>
+          </p>
+        </div>
+
+        <div class="rounded-lg border border-zinc-200 bg-white p-6">
+          <div class="flex items-center gap-2">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-100 text-amber-700">
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </span>
+            <h4 class="font-medium text-zinc-900">Out-of-Network (Phoenix)</h4>
+          </div>
+          <p class="mt-3 text-sm text-zinc-600 text-pretty">
+            Posts from accounts the user doesn't follow. Uses two-tower similarity search. <strong>Gets a penalty factor applied.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Practical Takeaways -->
+    <div class="mt-12 rounded-lg border border-zinc-200 bg-zinc-50 p-6">
+      <h3 class="text-lg font-medium text-zinc-900">Practical Takeaways</h3>
+      <ul class="mt-4 space-y-3 text-sm text-zinc-600">
+        <li class="flex items-start gap-3">
+          <span class="font-semibold text-zinc-900">1.</span>
+          <span class="text-pretty"><strong>Build consistent engagement patterns.</strong> Post consistently in your niche to build a strong author embedding.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="font-semibold text-zinc-900">2.</span>
+          <span class="text-pretty"><strong>Earn in-network status.</strong> Converting followers is crucial—they see you without the OON penalty.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="font-semibold text-zinc-900">3.</span>
+          <span class="text-pretty"><strong>Respect diversity.</strong> Don't post 20 times a day. Multiple posts get exponentially discounted.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="font-semibold text-zinc-900">4.</span>
+          <span class="text-pretty"><strong>Stay fresh.</strong> Posts older than the threshold are filtered out entirely. Timing matters.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

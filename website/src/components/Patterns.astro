@@ -1,0 +1,163 @@
+---
+const patterns = [
+  {
+    name: "The Insight Thread",
+    bestFor: "Dwell time, Follows, Quote tweets",
+    description: "Non-obvious observation as hook, followed by numbered insights and a closing CTA for follow.",
+    example: `I reviewed 200 failed startups for Y Combinator.
+
+Here's what most people get wrong:
+
+1. They pivoted too late, not too early
+2. The cofounder conflicts started before the idea
+3. "Running out of money" was the symptom, not the cause
+4. The winners had customers before they had product
+
+The real lesson: Speed of learning beats everything else.`,
+  },
+  {
+    name: "The Contrarian Take",
+    bestFor: "Replies, Quote tweets, Profile clicks",
+    description: "Bold claim that challenges consensus. Brief explanation without over-explaining.",
+    example: `"Work-life balance" is a trap.
+
+The best founders I know don't balance anything. They integrate.
+
+Work is life. Life is work. The separation is the problem.`,
+  },
+  {
+    name: "The Resource Post",
+    bestFor: "Copy Link Share, DM Share, Saves",
+    description: "Clear promise of value with comprehensive but scannable content.",
+    example: `Complete cold email checklist:
+
+□ Subject line < 6 words
+□ First line personalized to them
+□ One clear ask
+□ Under 100 words total
+□ No attachments
+□ Send Tuesday-Thursday 9-11am
+□ Follow up exactly once at day 3
+
+Save this. Send it to your sales team.`,
+  },
+  {
+    name: "The Curiosity Gap",
+    bestFor: "Dwell time, Click-through, Replies",
+    description: "Create specific curiosity, delay payoff just enough, deliver satisfying answer.",
+    example: `The #1 product at Amazon isn't what you think.
+
+Not AWS. Not Prime. Not Alexa.
+
+It's the internal document culture.
+
+Every major decision starts with a 6-page narrative memo.
+
+That's why they move fast—everyone actually understands the decision.`,
+  },
+  {
+    name: "The Personal Story",
+    bestFor: "Follows, Dwell time, Emotional resonance",
+    description: "Start mid-action (not 'So I was...'), quick context, turning point, and lesson.",
+    example: `"We're shutting down the company."
+
+Hardest email I ever sent. 47 employees. Families. Dreams.
+
+But here's what I didn't expect:
+
+Every single person replied thanking me. Not for the job. For being honest.
+
+Transparency isn't just ethical. It's the only way to leave with your reputation intact.`,
+  },
+  {
+    name: "The Direct Value",
+    bestFor: "Shares, Replies, Practical engagement",
+    description: "Immediate actionable content with no preamble.",
+    example: `Write better emails:
+
+1. Start with the ask
+2. Max 5 sentences
+3. One action per email
+
+That's it. Stop overthinking.`,
+  },
+  {
+    name: "So You Don't Have To",
+    bestFor: "Share, Follow, Dwell",
+    description: "Establish effort, distill key findings, save them time.",
+    example: `I read 50 books on negotiation so you don't have to.
+
+Here are the 3 things that actually matter:
+
+1. The person who cares less has more power
+2. "No" is the start, not the end
+3. Silence is your best friend
+
+Everything else is noise.`,
+  },
+  {
+    name: "The Prediction",
+    bestFor: "Quote tweets, Replies, Expert engagement",
+    description: "Specific prediction with timeframe, brief reasoning, optional stake.",
+    example: `Prediction: 50% of SaaS companies will be AI-wrapper businesses by 2026.
+
+Here's why:
+
+- Foundation models are commoditizing
+- UX is the only moat
+- Infrastructure costs favor thin layers
+
+Bookmark this. Check back in 2 years.`,
+  },
+];
+---
+
+<section id="patterns" class="border-t border-zinc-200 bg-zinc-50">
+  <div class="mx-auto max-w-5xl px-6 py-16">
+    <h2 class="text-2xl font-semibold text-zinc-900 text-balance">Viral Patterns</h2>
+    <p class="mt-4 text-zinc-600 text-pretty">
+      Proven templates that trigger high-value engagement signals. Each pattern is optimized for specific algorithm behaviors.
+    </p>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-2">
+      {patterns.map((pattern) => (
+        <div class="rounded-lg border border-zinc-200 bg-white p-6">
+          <h3 class="font-medium text-zinc-900">{pattern.name}</h3>
+          <p class="mt-1 text-xs font-medium text-zinc-500">{pattern.bestFor}</p>
+          <p class="mt-3 text-sm text-zinc-600 text-pretty">{pattern.description}</p>
+          <details class="mt-4">
+            <summary class="cursor-pointer text-sm font-medium text-zinc-700 hover:text-zinc-900">
+              View example
+            </summary>
+            <pre class="mt-3 overflow-x-auto whitespace-pre-wrap rounded-lg bg-zinc-50 p-4 text-xs text-zinc-700">{pattern.example}</pre>
+          </details>
+        </div>
+      ))}
+    </div>
+
+    <!-- Signal Targeting Summary -->
+    <div class="mt-12">
+      <h3 class="text-lg font-medium text-zinc-900">Signal Targeting Summary</h3>
+      <div class="mt-4 overflow-hidden rounded-lg border border-zinc-200">
+        <table class="w-full text-sm">
+          <thead class="bg-zinc-50">
+            <tr>
+              <th class="px-4 py-3 text-left font-medium text-zinc-900">Pattern</th>
+              <th class="px-4 py-3 text-left font-medium text-zinc-900">Primary Signals</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-zinc-200 bg-white">
+            <tr><td class="px-4 py-3 font-medium text-zinc-900">Insight Thread</td><td class="px-4 py-3 text-zinc-600">Dwell, Follow, Quote</td></tr>
+            <tr><td class="px-4 py-3 font-medium text-zinc-900">Contrarian Take</td><td class="px-4 py-3 text-zinc-600">Reply, Quote, Profile Click</td></tr>
+            <tr><td class="px-4 py-3 font-medium text-zinc-900">Resource Post</td><td class="px-4 py-3 text-zinc-600">Copy Link Share, DM Share</td></tr>
+            <tr><td class="px-4 py-3 font-medium text-zinc-900">Curiosity Gap</td><td class="px-4 py-3 text-zinc-600">Dwell, Click</td></tr>
+            <tr><td class="px-4 py-3 font-medium text-zinc-900">Personal Story</td><td class="px-4 py-3 text-zinc-600">Follow, Dwell</td></tr>
+            <tr><td class="px-4 py-3 font-medium text-zinc-900">Direct Value</td><td class="px-4 py-3 text-zinc-600">Share, Reply</td></tr>
+            <tr><td class="px-4 py-3 font-medium text-zinc-900">"So You Don't Have To"</td><td class="px-4 py-3 text-zinc-600">Share, Follow, Dwell</td></tr>
+            <tr><td class="px-4 py-3 font-medium text-zinc-900">Prediction</td><td class="px-4 py-3 text-zinc-600">Quote, Reply</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

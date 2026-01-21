@@ -1,0 +1,133 @@
+---
+const highValueSignals = [
+  { signal: "Reply", measures: "Genuine conversation", trigger: "Ask questions, invite perspectives" },
+  { signal: "DM Share", measures: "Private sharing", trigger: "Insider info, niche value" },
+  { signal: "Copy Link Share", measures: "External sharing", trigger: "Reference-worthy content" },
+  { signal: "Dwell Time", measures: "Time spent reading", trigger: "Depth, formatting, intrigue" },
+  { signal: "Follow", measures: "New follower conversion", trigger: "Demonstrate ongoing value" },
+  { signal: "Quote", measures: "Amplification with commentary", trigger: "Hot takes worth responding to" },
+];
+
+const mediumSignals = [
+  { signal: "Like", measures: "Basic approval" },
+  { signal: "Repost", measures: "Amplification" },
+  { signal: "Click", measures: "Link/media engagement" },
+  { signal: "Profile Click", measures: "Author interest" },
+  { signal: "Photo Expand", measures: "Image engagement" },
+  { signal: "Video Quality View", measures: "Video completion" },
+];
+
+const negativeSignals = [
+  { signal: "Not Interested", causes: "Score penalty" },
+  { signal: "Mute Author", causes: "Score penalty" },
+  { signal: "Block Author", causes: "Severe penalty" },
+  { signal: "Report", causes: "Severe penalty" },
+];
+---
+
+<section id="scoring" class="border-t border-zinc-200 bg-zinc-50">
+  <div class="mx-auto max-w-5xl px-6 py-16">
+    <h2 class="text-2xl font-semibold text-zinc-900 text-balance">Scoring Signals</h2>
+    <p class="mt-4 text-zinc-600 text-pretty">
+      The algorithm predicts 19 engagement probabilities and combines them into a weighted score. Understanding what drives each signal is key to virality.
+    </p>
+
+    <div class="mt-8 rounded-lg border border-zinc-200 bg-white p-1">
+      <div class="rounded-md bg-zinc-900 px-4 py-2">
+        <code class="text-sm text-zinc-100">final_score = Σ(probability_i × weight_i) + offset</code>
+      </div>
+    </div>
+
+    <div class="mt-12 space-y-12">
+      <!-- High-Value Signals -->
+      <div>
+        <h3 class="flex items-center gap-2 text-lg font-medium text-zinc-900">
+          <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-100 text-xs font-semibold text-green-700">↑</span>
+          High-Value Signals
+        </h3>
+        <p class="mt-2 text-sm text-zinc-600">Maximize these for maximum reach.</p>
+        <div class="mt-4 overflow-hidden rounded-lg border border-zinc-200">
+          <table class="w-full text-sm">
+            <thead class="bg-zinc-50">
+              <tr>
+                <th class="px-4 py-3 text-left font-medium text-zinc-900">Signal</th>
+                <th class="px-4 py-3 text-left font-medium text-zinc-900">What It Measures</th>
+                <th class="hidden px-4 py-3 text-left font-medium text-zinc-900 md:table-cell">How to Trigger</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-zinc-200 bg-white">
+              {highValueSignals.map(({ signal, measures, trigger }) => (
+                <tr>
+                  <td class="px-4 py-3 font-medium text-zinc-900">{signal}</td>
+                  <td class="px-4 py-3 text-zinc-600">{measures}</td>
+                  <td class="hidden px-4 py-3 text-zinc-600 md:table-cell">{trigger}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Medium Signals -->
+      <div>
+        <h3 class="flex items-center gap-2 text-lg font-medium text-zinc-900">
+          <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-zinc-100 text-xs font-semibold text-zinc-700">→</span>
+          Medium Signals
+        </h3>
+        <p class="mt-2 text-sm text-zinc-600">Good to have, but lower weight.</p>
+        <div class="mt-4 overflow-hidden rounded-lg border border-zinc-200">
+          <table class="w-full text-sm">
+            <thead class="bg-zinc-50">
+              <tr>
+                <th class="px-4 py-3 text-left font-medium text-zinc-900">Signal</th>
+                <th class="px-4 py-3 text-left font-medium text-zinc-900">What It Measures</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-zinc-200 bg-white">
+              {mediumSignals.map(({ signal, measures }) => (
+                <tr>
+                  <td class="px-4 py-3 font-medium text-zinc-900">{signal}</td>
+                  <td class="px-4 py-3 text-zinc-600">{measures}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Negative Signals -->
+      <div>
+        <h3 class="flex items-center gap-2 text-lg font-medium text-zinc-900">
+          <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-red-100 text-xs font-semibold text-red-700">↓</span>
+          Negative Signals
+        </h3>
+        <p class="mt-2 text-sm text-zinc-600">Avoid at all costs.</p>
+        <div class="mt-4 overflow-hidden rounded-lg border border-zinc-200">
+          <table class="w-full text-sm">
+            <thead class="bg-zinc-50">
+              <tr>
+                <th class="px-4 py-3 text-left font-medium text-zinc-900">Signal</th>
+                <th class="px-4 py-3 text-left font-medium text-zinc-900">What It Causes</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-zinc-200 bg-white">
+              {negativeSignals.map(({ signal, causes }) => (
+                <tr>
+                  <td class="px-4 py-3 font-medium text-zinc-900">{signal}</td>
+                  <td class="px-4 py-3 text-zinc-600">{causes}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 rounded-lg border border-zinc-200 bg-white p-6">
+      <h3 class="text-lg font-medium text-zinc-900">Key Insight</h3>
+      <p class="mt-2 text-zinc-600 text-pretty">
+        The algorithm doesn't care about "engagement" generically. It cares about <strong>specific actions</strong>: replies, shares, dwell time. A post that gets 100 likes but no replies scores worse than a post with 50 likes and 20 replies.
+      </p>
+    </div>
+  </div>
+</section>

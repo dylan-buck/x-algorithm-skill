@@ -1,0 +1,20 @@
+---
+import CodeBlock from "./CodeBlock.astro";
+---
+
+<section id="installation" class="border-t border-zinc-200 bg-zinc-50">
+  <div class="mx-auto max-w-5xl px-6 py-16">
+    <h2 class="text-2xl font-semibold text-zinc-900 text-balance">Installation</h2>
+    <p class="mt-4 text-zinc-600 text-pretty">
+      Install the X Algorithm Skill for Claude Code with a single command.
+    </p>
+
+    <div class="mt-8">
+      <CodeBlock code="npx x-algorithm-skill init" lang="bash" />
+    </div>
+
+    <p class="mt-6 text-sm text-zinc-600 text-pretty">
+      Requires <a href="https://claude.ai/code" class="underline hover:text-zinc-900">Claude Code</a>. The skill will be added to your Claude Code skills directory.
+    </p>
+  </div>
+</section>

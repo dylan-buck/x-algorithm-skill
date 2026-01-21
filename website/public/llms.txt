@@ -1,0 +1,139 @@
+# X Algorithm Skill
+
+> Write viral X posts backed by the actual recommendation algorithm source code. No generic social media advice—every recommendation traces to real algorithm behavior.
+
+## Scoring Signals
+
+The Phoenix ranking model predicts 19 engagement probabilities, multiplied by weights and summed into a final score.
+
+### High-Value Positive Signals (maximize these)
+
+**Reply** - Probability user will reply. Ask genuine questions, make claims that invite pushback, share incomplete thoughts others can build on.
+
+**DM Share** - Probability user shares via Direct Message. Share insider knowledge, actionable frameworks, niche-specific content experts share with peers.
+
+**Copy Link Share** - Probability user copies link to share externally. Create reference-worthy guides, lists, frameworks. Evergreen content people bookmark.
+
+**Dwell Time** - How long user spends viewing. Write longer substantive posts, use formatting that encourages reading, open with intrigue.
+
+**Follow Author** - Probability user follows you. Demonstrate unique expertise, promise ongoing value, show personality worth following.
+
+**Quote** - Probability user quote-tweets. Make claims worth commenting on, share takes people want to amplify with their own spin.
+
+### Medium Positive Signals
+
+- Like/Favorite - Basic approval
+- Retweet - Pure amplification
+- Click - Link/media engagement
+- Profile Click - Author interest
+- Photo Expand - Image engagement
+- Video Quality View - Video completion
+
+### Negative Signals (avoid at all costs)
+
+- Not Interested - Score penalty. Avoid spam, engagement bait, off-topic content.
+- Mute Author - Severe penalty. Don't over-post (5-10/day max), stay in your lane.
+- Block Author - Severe penalty. Don't be hostile or aggressive.
+- Report - Most severe penalty. Follow platform rules.
+
+## Discovery & Retrieval
+
+Two-tower neural network matches post embeddings to user interest embeddings based on engagement history.
+
+### Out-of-Network Penalty
+
+Posts from accounts the user doesn't follow get a penalty multiplier. Your post must score significantly higher to overcome this.
+
+### Author Diversity Penalty
+
+Multiple posts from same author get exponentially discounted. Don't flood the timeline.
+
+### Age Filter
+
+Posts older than threshold are filtered out entirely. Fresh content gets priority.
+
+## Content Structure
+
+### Hook Types (first line is 80% of success)
+
+- Question Hook - Opens with genuine question reader wants answered
+- Contrarian Hook - Challenges conventional wisdom immediately
+- Insight Hook - Leads with non-obvious observation
+- Story Hook - Opens mid-action to pull readers in
+- Resource Hook - Promises immediate value
+
+### Body Structure
+
+**Short posts (<280 chars)**: Single punch. Hook + Payoff. No preamble.
+
+**Long posts (280-1000 chars)**: HSP structure. Hook (1 line) + Support (2-4 points) + Punch (closing line).
+
+**Threads**: Each post must stand alone AND continue the story. Label explicitly: "Thread:" or "1/"
+
+### Formatting for Dwell Time
+
+- Every sentence gets its own line
+- Short lines create rhythm
+- Lists work
+- Questions break monotony
+
+## Viral Patterns
+
+### The Insight Thread
+Non-obvious observation + "Here's what I learned:" + 3-7 numbered insights + Follow CTA
+
+### The Contrarian Take
+Bold claim challenging consensus + brief explanation + optional invitation to disagree
+
+### The Resource Post
+Clear value promise + comprehensive scannable content + explicit save/share CTA
+
+### The Curiosity Gap
+Create specific curiosity + delay payoff + deliver satisfying answer
+
+### The Personal Story
+Start mid-action + quick context + turning point + lesson
+
+### The "So You Don't Have To"
+"I [did extensive thing] so you don't have to" + distilled key findings
+
+## Anti-Patterns to Avoid
+
+### Engagement Farmer
+"Like + RT + Follow!" triggers Not Interested signals.
+
+### Reply Guy
+Self-promotional replies on every viral post trigger Mute.
+
+### Thread Maximalist
+Every thought as 20-tweet thread hits author diversity penalty.
+
+### Controversy Farmer
+Rage bait gets short-term replies but long-term blocks/mutes.
+
+### Copy-Paste Recycler
+Same content reposted hits deduplication filters.
+
+## Pre-Post Checklist
+
+- [ ] Reply: Contains question or debate-worthy claim?
+- [ ] Share: Reference-worthy value someone would send to specific person?
+- [ ] Dwell: Hook creates curiosity, formatting encourages reading?
+- [ ] Follow: Demonstrates unique expertise?
+- [ ] Negative: Not asking for engagement, not hostile, on-brand?
+- [ ] Hook: Specific, creates curiosity, works standalone?
+- [ ] Structure: Proper line breaks, length matches goal?
+
+## Signal Hierarchy
+
+**Tier 1 (Highest)**: DM Share, Copy Link Share, Reply, Follow
+**Tier 2 (High)**: Quote, Dwell Time, Video Quality View
+**Tier 3 (Medium)**: Retweet, Like, Profile Click
+**Tier 4 (Lower)**: Click, Photo Expand
+**Tier 5 (Negative)**: Not Interested < Mute < Block < Report
+
+## Key Insight
+
+The algorithm doesn't care about "engagement" generically. It cares about specific actions: replies, shares, dwell time. A post that gets 100 likes but no replies scores worse than a post with 50 likes and 20 replies.
+
+Write for the high-value signals: replies, shares, follows. The rest follows.

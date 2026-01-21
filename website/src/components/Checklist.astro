@@ -1,0 +1,150 @@
+---
+const signalChecks = [
+  { category: "Reply", check: "Question or debate-worthy claim?" },
+  { category: "Share", check: "Reference-worthy value?" },
+  { category: "Dwell", check: "Rewarding structure?" },
+  { category: "Follow", check: "Unique expertise shown?" },
+  { category: "Negative", check: "Nothing triggering?" },
+];
+
+const hookChecks = [
+  "Specific, not vague?",
+  "Creates curiosity?",
+  "Works standalone?",
+];
+
+const structureChecks = [
+  "Proper line breaks?",
+  "Length matches goal?",
+  "Passes visual scan?",
+];
+
+const finalChecks = [
+  "Would I screenshot this?",
+  "Would I share this?",
+  "Would I follow someone who posted this?",
+];
+
+const hookTypes = [
+  { type: "Question", bestFor: "Replies", example: "\"Why do...\"" },
+  { type: "Contrarian", bestFor: "Quotes, Replies", example: "\"[Common belief] is wrong.\"" },
+  { type: "Insight", bestFor: "Dwell, Follow", example: "\"I discovered...\"" },
+  { type: "Story", bestFor: "Dwell, Follow", example: "\"[Dialogue]\" or \"[Action]\"" },
+  { type: "Resource", bestFor: "Share", example: "\"Complete guide to...\"" },
+  { type: "Prediction", bestFor: "Quote, Reply", example: "\"Prediction:\"" },
+];
+---
+
+<section id="checklist" class="border-t border-zinc-200 bg-zinc-50">
+  <div class="mx-auto max-w-5xl px-6 py-16">
+    <h2 class="text-2xl font-semibold text-zinc-900 text-balance">Iteration Framework</h2>
+    <p class="mt-4 text-zinc-600 text-pretty">
+      A systematic approach to improving drafts before posting. Run every draft through this checklist to optimize for the algorithm.
+    </p>
+
+    <!-- Quick Reference Checklist -->
+    <div class="mt-12 grid gap-6 md:grid-cols-2">
+      <!-- Signals -->
+      <div class="rounded-lg border border-zinc-200 bg-white p-6">
+        <h3 class="font-medium text-zinc-900">Signals</h3>
+        <ul class="mt-4 space-y-3">
+          {signalChecks.map(({ category, check }) => (
+            <li class="flex items-center gap-3 text-sm">
+              <input type="checkbox" class="h-4 w-4 rounded border-zinc-300 text-zinc-900" disabled />
+              <span>
+                <strong class="text-zinc-900">{category}:</strong>
+                <span class="text-zinc-600"> {check}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Hook -->
+      <div class="rounded-lg border border-zinc-200 bg-white p-6">
+        <h3 class="font-medium text-zinc-900">Hook</h3>
+        <ul class="mt-4 space-y-3">
+          {hookChecks.map((check) => (
+            <li class="flex items-center gap-3 text-sm text-zinc-700">
+              <input type="checkbox" class="h-4 w-4 rounded border-zinc-300 text-zinc-900" disabled />
+              <span>{check}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Structure -->
+      <div class="rounded-lg border border-zinc-200 bg-white p-6">
+        <h3 class="font-medium text-zinc-900">Structure</h3>
+        <ul class="mt-4 space-y-3">
+          {structureChecks.map((check) => (
+            <li class="flex items-center gap-3 text-sm text-zinc-700">
+              <input type="checkbox" class="h-4 w-4 rounded border-zinc-300 text-zinc-900" disabled />
+              <span>{check}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Final -->
+      <div class="rounded-lg border border-zinc-200 bg-white p-6">
+        <h3 class="font-medium text-zinc-900">Final Check</h3>
+        <ul class="mt-4 space-y-3">
+          {finalChecks.map((check) => (
+            <li class="flex items-center gap-3 text-sm text-zinc-700">
+              <input type="checkbox" class="h-4 w-4 rounded border-zinc-300 text-zinc-900" disabled />
+              <span>{check}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="mt-4 text-xs text-zinc-500">If any answer is no, iterate.</p>
+      </div>
+    </div>
+
+    <!-- Hook Types -->
+    <div class="mt-12">
+      <h3 class="text-lg font-medium text-zinc-900">Hook Types Ranked by Signal Strength</h3>
+      <div class="mt-4 overflow-hidden rounded-lg border border-zinc-200">
+        <table class="w-full text-sm">
+          <thead class="bg-zinc-100">
+            <tr>
+              <th class="px-4 py-3 text-left font-medium text-zinc-900">Hook Type</th>
+              <th class="px-4 py-3 text-left font-medium text-zinc-900">Best For</th>
+              <th class="hidden px-4 py-3 text-left font-medium text-zinc-900 md:table-cell">Example Start</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-zinc-200 bg-white">
+            {hookTypes.map(({ type, bestFor, example }) => (
+              <tr>
+                <td class="px-4 py-3 font-medium text-zinc-900">{type}</td>
+                <td class="px-4 py-3 text-zinc-600">{bestFor}</td>
+                <td class="hidden px-4 py-3 font-mono text-xs text-zinc-600 md:table-cell">{example}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Length Guidelines -->
+    <div class="mt-12">
+      <h3 class="text-lg font-medium text-zinc-900">Length Guidelines</h3>
+      <div class="mt-4 overflow-hidden rounded-lg border border-zinc-200">
+        <table class="w-full text-sm">
+          <thead class="bg-zinc-100">
+            <tr>
+              <th class="px-4 py-3 text-left font-medium text-zinc-900">Goal</th>
+              <th class="px-4 py-3 text-left font-medium text-zinc-900">Optimal Length</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-zinc-200 bg-white">
+            <tr><td class="px-4 py-3 text-zinc-900">Maximum reach</td><td class="px-4 py-3 text-zinc-600">71-100 characters</td></tr>
+            <tr><td class="px-4 py-3 text-zinc-900">Engagement depth</td><td class="px-4 py-3 text-zinc-600">200-280 characters</td></tr>
+            <tr><td class="px-4 py-3 text-zinc-900">Authority building</td><td class="px-4 py-3 text-zinc-600">500-1000 characters</td></tr>
+            <tr><td class="px-4 py-3 text-zinc-900">Threads</td><td class="px-4 py-3 text-zinc-600">5-15 posts</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

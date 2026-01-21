@@ -1,0 +1,47 @@
+---
+interface Props {
+  code: string;
+  lang?: string;
+}
+
+const { code, lang = "bash" } = Astro.props;
+---
+
+<div class="group relative">
+  <pre class="overflow-x-auto rounded-lg bg-zinc-900 p-4 text-sm text-zinc-100"><code data-code={code}>{code}</code></pre>
+  <button
+    type="button"
+    class="absolute right-2 top-2 rounded-md bg-zinc-800 px-2 py-1 text-xs text-zinc-400 opacity-0 transition-opacity hover:bg-zinc-700 hover:text-zinc-200 group-hover:opacity-100"
+    data-copy-button
+  >
+    <span class="copy-text">Copy</span>
+    <span class="copied-text hidden">Copied!</span>
+  </button>
+</div>
+
+<script>
+  document.querySelectorAll("[data-copy-button]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const codeElement = button.parentElement?.querySelector("code");
+      const code = codeElement?.getAttribute("data-code") || codeElement?.textContent || "";
+
+      try {
+        await navigator.clipboard.writeText(code);
+        const copyText = button.querySelector(".copy-text");
+        const copiedText = button.querySelector(".copied-text");
+
+        if (copyText && copiedText) {
+          copyText.classList.add("hidden");
+          copiedText.classList.remove("hidden");
+
+          setTimeout(() => {
+            copyText.classList.remove("hidden");
+            copiedText.classList.add("hidden");
+          }, 2000);
+        }
+      } catch (err) {
+        console.error("Failed to copy:", err);
+      }
+    });
+  });
+</script>
