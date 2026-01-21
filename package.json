@@ -1,10 +1,10 @@
 {
   "name": "x-algorithm-skill",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Write viral X posts using deep knowledge of the actual recommendation algorithm",
   "type": "module",
   "bin": {
-    "x-algorithm-skill": "./bin/x-algorithm-skill.cjs"
+    "x-algorithm-skill": "./bin/x-algorithm-skill.js"
   },
   "files": [
     "bin/",
@@ -33,5 +33,8 @@
   "homepage": "https://github.com/dylan-buck/x-algorithm-skill#readme",
   "bugs": {
     "url": "https://github.com/dylan-buck/x-algorithm-skill/issues"
+  },
+  "dependencies": {
+    "update-notifier": "^7.3.1"
   }
 }

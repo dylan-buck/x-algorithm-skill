@@ -80,22 +80,22 @@ Posts older than threshold are filtered out entirely. Fresh content gets priorit
 ## Viral Patterns
 
 ### The Insight Thread
-Non-obvious observation + "Here's what I learned:" + 3-7 numbered insights + Follow CTA
+Non-obvious observation + varied transition (not always "Here's what I learned:") + 2-7 numbered insights (vary the count) + natural closer
 
 ### The Contrarian Take
-Bold claim challenging consensus + brief explanation + optional invitation to disagree
+Bold claim challenging consensus + brief explanation + optional invitation to disagree or personal note
 
 ### The Resource Post
-Clear value promise + comprehensive scannable content + explicit save/share CTA
+Clear value promise (skip "ultimate/comprehensive") + practical scannable content + natural closer with personal touch
 
 ### The Curiosity Gap
-Create specific curiosity + delay payoff + deliver satisfying answer
+Create specific curiosity + brief delay (don't milk it) + deliver satisfying non-obvious answer
 
 ### The Personal Story
-Start mid-action + quick context + turning point + lesson
+Start mid-action + quick context + the turn + optional lesson (don't force one if there isn't one)
 
-### The "So You Don't Have To"
-"I [did extensive thing] so you don't have to" + distilled key findings
+### The Effort Summary
+What you did (specific) + what you found (varied count, not always 3) + casual closer
 
 ## Anti-Patterns to Avoid
 
@@ -114,15 +114,67 @@ Rage bait gets short-term replies but long-term blocks/mutes.
 ### Copy-Paste Recycler
 Same content reposted hits deduplication filters.
 
-## Pre-Post Checklist
+## Writing Like a Human, Not a Bot
+
+Algorithm optimization means nothing if your posts scream "AI wrote this." The algorithm favors genuine engagement, and users can smell inauthenticity.
+
+### AI Vocabulary Blacklist - NEVER use these words
+
+**Corporate buzzwords**: leverage, utilize, optimize, synergy, stakeholders, robust, comprehensive, streamlined, scalable, cutting-edge, best-in-class, world-class
+
+**AI verbal tics**: Additionally, Furthermore, Moreover, crucial, essential, vital, key (as adjectives), delve, dive into, unpack, landscape, ecosystem, space (for industries), journey, adventure (for experiences), tapestry, myriad, plethora, multifaceted, nuanced, paradigm, paradigm shift, game-changing, groundbreaking, transformative, revolutionary, unlock, unleash, empower, pivotal, pivotal moment, broader implications, overarching, "It's worth noting", "It's important to note", "at the end of the day"
+
+**Sycophantic openers** (never start with): "Great question!", "Absolutely!", "That's a fantastic point!", "I love this!"
+
+**Generic positive closers** (never end with): "Success awaits!", "The possibilities are endless!", "I hope this helps!", "Let me know if you have any questions!"
+
+### Structural Tells to Avoid
+
+**Rule of Three Trap**: AI loves exactly 3 things. Real humans sometimes have 2 things. Or 4. Or 7. Vary your list lengths.
+
+**Negative Parallelism**: "Not just X, but Y" and "It's not about X, it's about Y" are AI favorites. Use sparingly.
+
+**Significance Inflation**: "Pivotal moments." "Broader implications." "Fundamental shifts." Real insights don't need inflation.
+
+**Em Dash Overuse**: Em dashes are fine occasionally. AI uses them constantly. If you have more than one em dash per post, cut some.
+
+**Formulaic Transitions**: "Here's the thing:", "Here's why:", "Here's what I learned:" — these work but are overused. Vary your transitions or skip them entirely.
+
+**The Perfect Structure**: AI posts have suspiciously clean structure. Real posts meander sometimes. That's okay.
+
+### Adding Soul to Your Writing
+
+**Express Genuine Opinions**: AI hedges. Humans commit. Say "Option B is wrong. I've tried it." not "There's something to be said for both approaches..."
+
+**Use Contractions**: "Don't" not "Do not". "It's" not "It is". "Can't" not "Cannot".
+
+**Vary Rhythm Unpredictably**: Short sentence. Then maybe a longer one that goes on for a bit. Then short again. Fragment. Works.
+
+**Include Specific Details**: "Watched three companies blow $2M+ on this exact mistake last year" not "I've seen many companies struggle with this challenge"
+
+**Allow Imperfection**: Real posts have tangents that don't quite connect, incomplete thoughts, opinions stated too strongly, casual asides. AI never includes these.
+
+**Write Like You Talk**: Read your post out loud. Would you say this to a friend at a bar? If not, rewrite it until you would.
+
+### Humanization Checklist
+
+- [ ] Zero words from the AI blacklist?
+- [ ] Varied list lengths (not always 3)?
+- [ ] No more than one em dash?
+- [ ] Using contractions naturally?
+- [ ] At least one specific detail?
+- [ ] Would you actually say this out loud?
+- [ ] Something slightly imperfect or casual?
+- [ ] No sycophantic opener or generic closer?
+
+## Pre-Post Checklist (6-Point Audit)
 
 - [ ] Reply: Contains question or debate-worthy claim?
 - [ ] Share: Reference-worthy value someone would send to specific person?
 - [ ] Dwell: Hook creates curiosity, formatting encourages reading?
 - [ ] Follow: Demonstrates unique expertise?
 - [ ] Negative: Not asking for engagement, not hostile, on-brand?
-- [ ] Hook: Specific, creates curiosity, works standalone?
-- [ ] Structure: Proper line breaks, length matches goal?
+- [ ] Humanization: No AI vocabulary, varied structure, sounds like a real person?
 
 ## Signal Hierarchy
 
@@ -137,3 +189,5 @@ Same content reposted hits deduplication filters.
 The algorithm doesn't care about "engagement" generically. It cares about specific actions: replies, shares, dwell time. A post that gets 100 likes but no replies scores worse than a post with 50 likes and 20 replies.
 
 Write for the high-value signals: replies, shares, follows. The rest follows.
+
+And make it sound human. The best algorithm optimization in the world won't help if your post reads like AI slop.

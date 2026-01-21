@@ -1,0 +1,98 @@
+---
+const aiWords = [
+  "leverage", "utilize", "crucial", "delve", "transformative",
+  "groundbreaking", "unlock", "pivotal", "robust", "comprehensive"
+];
+
+const structuralTells = [
+  "Always listing exactly 3 things",
+  "\"Not just X, but Y\" constructions",
+  "Em dash overuse for dramatic pauses",
+  "\"Here's the thing:\" formulaic transitions",
+  "Perfectly clean structure with no imperfections"
+];
+
+const humanTouches = [
+  "Use contractions naturally (don't, it's, can't)",
+  "Vary list lengths (2, 4, or 7 items—not always 3)",
+  "Include specific details over vague claims",
+  "Allow imperfection—tangents, casual asides",
+  "Write like you'd talk to a friend"
+];
+---
+
+<section id="humanization" class="border-t border-zinc-200">
+  <div class="mx-auto max-w-5xl px-6 py-16">
+    <div class="flex items-center gap-3">
+      <h2 class="text-2xl font-semibold text-zinc-900 text-balance">Writing Like a Human, Not a Bot</h2>
+      <span class="rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">New in v1.2</span>
+    </div>
+    <p class="mt-4 text-zinc-600 text-pretty">
+      Algorithm optimization means nothing if your posts scream "AI wrote this." Users can smell inauthenticity. The skill now includes comprehensive humanization rules to help you write posts that are both algorithm-optimized AND authentically human.
+    </p>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <!-- AI Vocabulary -->
+      <div class="rounded-lg border border-zinc-200 bg-white p-5">
+        <div class="flex items-center gap-2">
+          <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-red-100">
+            <svg class="h-4 w-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+            </svg>
+          </div>
+          <h3 class="font-medium text-zinc-900">AI Vocabulary Blacklist</h3>
+        </div>
+        <p class="mt-3 text-sm text-zinc-600">Words that instantly signal AI writing:</p>
+        <div class="mt-3 flex flex-wrap gap-1.5">
+          {aiWords.map((word) => (
+            <span class="rounded bg-red-50 px-2 py-0.5 text-xs text-red-700 line-through decoration-red-400">{word}</span>
+          ))}
+        </div>
+      </div>
+
+      <!-- Structural Tells -->
+      <div class="rounded-lg border border-zinc-200 bg-white p-5">
+        <div class="flex items-center gap-2">
+          <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-100">
+            <svg class="h-4 w-4 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <h3 class="font-medium text-zinc-900">Structural Tells</h3>
+        </div>
+        <ul class="mt-3 space-y-1.5 text-sm text-zinc-600">
+          {structuralTells.map((tell) => (
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-amber-400"></span>
+              <span>{tell}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Human Touches -->
+      <div class="rounded-lg border border-zinc-200 bg-white p-5">
+        <div class="flex items-center gap-2">
+          <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100">
+            <svg class="h-4 w-4 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 class="font-medium text-zinc-900">Adding Soul</h3>
+        </div>
+        <ul class="mt-3 space-y-1.5 text-sm text-zinc-600">
+          {humanTouches.map((touch) => (
+            <li class="flex items-start gap-2">
+              <span class="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-emerald-400"></span>
+              <span>{touch}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <p class="mt-8 text-sm text-zinc-500">
+      The full skill includes before/after examples, a complete AI vocabulary blacklist, and a humanization test added to the 6-point audit framework.
+    </p>
+  </div>
+</section>

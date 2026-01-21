@@ -1,7 +1,7 @@
 ---
 name: x-algorithm
 description: Write viral X posts using deep knowledge of the actual recommendation algorithm
-version: 1.0.0
+version: 1.2.0
 author: Claude
 invocation: /x-algorithm
 ---
@@ -782,43 +782,58 @@ Proven templates that trigger high-value engagement signals. Each pattern is opt
 
 Structure:
 1. Non-obvious observation as hook
-2. "Here's what I learned:" transition
-3. 3-7 numbered insights
-4. Closing CTA for follow
+2. Bridge to insights (vary the phrasing—don't always use "Here's what I learned")
+3. 2-7 insights (vary the count—not always 3 or 4)
+4. Closing that invites continued engagement
 
-**Template**:
+**Template variations**:
 ```
 I [did/studied/analyzed] [specific thing] for [time period].
 
-Here's what most people get wrong:
+[Varied transition—see options below]
 
-1. [Insight that challenges assumptions]
-2. [Practical observation]
-3. [Counter-intuitive finding]
-4. [Actionable takeaway]
+1. [Insight]
+2. [Insight]
+...
 
-The real lesson: [One-line summary]
-
-Follow for more [topic] insights.
+[Natural closer—not always a follow CTA]
 ```
 
-**Example**:
-```
-I reviewed 200 failed startups for Y Combinator.
+**Transition options** (rotate these):
+- "Nobody talks about this:"
+- "The patterns were obvious in hindsight:"
+- "What surprised me:"
+- "The uncomfortable truth:"
+- Skip the transition entirely—just list the insights
 
-Here's what most people get wrong:
+**Example 1** (5 items, no explicit follow CTA):
+```
+Reviewed 200 failed startups for YC last year.
+
+The patterns were obvious in hindsight:
 
 1. They pivoted too late, not too early
-2. The cofounder conflicts started before the idea
-3. "Running out of money" was the symptom, not the cause
-4. The winners had customers before they had product
+2. Cofounder conflicts started before the idea did
+3. "Running out of money" was the symptom, never the cause
+4. Winners had customers before product
+5. The ones who failed fastest recovered fastest
 
-The real lesson: Speed of learning beats everything else.
-
-Follow for more startup post-mortems.
+Speed of learning beats everything. That's really it.
 ```
 
-**Why it works**: Dense value triggers dwell. Numbered list is scannable. Follow CTA capitalizes on demonstrated expertise.
+**Example 2** (2 items, more casual):
+```
+Spent 6 months interviewing top sales reps.
+
+Two things separated the best from everyone else:
+
+1. They asked better questions than they gave pitches
+2. They followed up exactly 3 times, then stopped
+
+That's it. Everything else was noise.
+```
+
+**Why it works**: Dense value triggers dwell. Numbered lists are scannable. Varied structure avoids the AI-template feel.
 
 ---
 
@@ -828,8 +843,8 @@ Follow for more startup post-mortems.
 
 Structure:
 1. Bold claim that challenges consensus
-2. Brief explanation (don't over-explain)
-3. Optional: invitation to disagree
+2. Brief explanation (don't over-explain—let people fill in the gaps)
+3. Optional: invitation to disagree or a personal note
 
 **Template**:
 ```
@@ -837,21 +852,32 @@ Structure:
 
 [One-sentence contrarian position]
 
-[Optional: Here's why / Here's what I do instead]
+[Optional: personal experience or "fight me" energy]
 ```
 
-**Example**:
+**Example 1** (direct, casual):
 ```
-"Work-life balance" is a trap.
+"Work-life balance" assumes work and life are enemies.
 
-The best founders I know don't balance anything. They integrate.
+Mine aren't. I like what I do.
 
-Work is life. Life is work. The separation is the problem.
+Some weeks I work 60 hours because I'm excited. Some weeks I work 25 because I'm not. No guilt either way.
 ```
 
-**Why it works**: Disagreement drives replies. Quote tweets add commentary. Bold claims trigger engagement from both sides.
+**Example 2** (with invitation to argue):
+```
+Networking events are useless.
 
-**Warning**: Must be genuine contrarianism, not rage bait. Rage bait triggers Block/Mute/Report signals.
+I've been to hundreds. Met thousands of people. Maybe 3 turned into anything real.
+
+You know what works? Helping people with no expectation of return. That's it.
+
+Tell me I'm wrong.
+```
+
+**Why it works**: Disagreement drives replies. Quote tweets add commentary. The imperfect, casual tone makes it feel like a real opinion, not a marketing strategy.
+
+**Warning**: Must be genuine contrarianism you actually believe, not rage bait. Rage bait triggers Block/Mute/Report signals.
 
 ---
 
@@ -860,35 +886,45 @@ Work is life. Life is work. The separation is the problem.
 **Best for**: Copy Link Share, DM Share, Saves
 
 Structure:
-1. Clear promise of value
-2. Comprehensive but scannable content
-3. Explicit save/share CTA
+1. Clear promise of value (skip words like "ultimate" or "comprehensive"—just state what it is)
+2. Practical, scannable content
+3. Natural closer (not always "Bookmark this!")
 
 **Template**:
 ```
-[Complete/Ultimate/Full] [resource type] for [specific audience]:
+[What this is] [optional: personal qualifier]:
 
-[Content organized as list or thread]
+[Content as list]
 
-Bookmark this. Share it with [relevant person].
+[Casual closer or context]
 ```
 
-**Example**:
+**Example 1** (cold email checklist):
 ```
-Complete cold email checklist:
+Cold email checklist I actually use:
 
-□ Subject line < 6 words
-□ First line personalized to them
-□ One clear ask
+□ Subject line under 6 words
+□ First line about them, not you
+□ One ask. That's it. One.
 □ Under 100 words total
-□ No attachments
-□ Send Tuesday-Thursday 9-11am
-□ Follow up exactly once at day 3
+□ Send Tuesday-Thursday morning
+□ Follow up once at day 3, then stop
 
-Save this. Send it to your sales team.
+Took me 2 years to figure out what to cut. Hopefully saves you time.
 ```
 
-**Why it works**: Reference material gets shared externally. Explicit CTA increases share behavior. Checkbox format is highly scannable.
+**Example 2** (book recommendations, not exactly 3):
+```
+Books that actually changed how I work:
+
+- "The Mom Test" — stopped me from asking useless questions
+- "Working Backwards" — Amazon's process, surprisingly practical
+- "Thinking in Bets" — made me less certain and more right
+
+Tried to pick 5. Couldn't justify the other two.
+```
+
+**Why it works**: Reference material gets shared externally. The personal touches ("I actually use", "took me 2 years") make it feel earned, not assembled. Varied list lengths avoid the AI-template smell.
 
 ---
 
@@ -897,35 +933,47 @@ Save this. Send it to your sales team.
 **Best for**: Dwell time, Click-through, Replies
 
 Structure:
-1. Create specific curiosity
-2. Delay payoff just enough
-3. Deliver satisfying answer
+1. Create specific curiosity (be concrete, not clickbaity)
+2. Brief delay—don't milk it too long
+3. Deliver a satisfying, non-obvious answer
+4. Optional: implication or personal take
 
 **Template**:
 ```
-[Specific observation that creates question]
+[Specific observation that creates a question]
 
-[Build tension - what you expected vs reality]
+[Maybe one line of misdirection or setup]
 
-[Reveal the answer]
+[The reveal]
 
-[Implication or lesson]
+[What it means—keep this brief]
 ```
 
-**Example**:
+**Example 1** (company insight):
 ```
-The #1 product at Amazon isn't what you think.
+Amazon's secret weapon isn't AWS or Prime.
 
-Not AWS. Not Prime. Not Alexa.
+It's a writing culture.
 
-It's the internal document culture.
+Every major decision starts with a 6-page memo. No slides. No bullet points. Full sentences.
 
-Every major decision starts with a 6-page narrative memo.
+Forces clarity. You can't hide behind vague language when you have to write it all out.
 
-That's why they move fast—everyone actually understands the decision.
+Most companies would never try this. That's the point.
 ```
 
-**Why it works**: Curiosity creates dwell time. Delayed payoff increases engagement. Satisfying answer triggers shares.
+**Example 2** (personal discovery):
+```
+Figured out why my best ideas come in the shower.
+
+Not the water. Not the relaxation.
+
+It's the only time I'm not looking at a screen.
+
+Started taking walks without my phone. Same effect.
+```
+
+**Why it works**: Curiosity creates dwell time. The payoff feels earned but not overly theatrical. Personal examples feel more authentic than grandiose reveals.
 
 ---
 
@@ -934,36 +982,49 @@ That's why they move fast—everyone actually understands the decision.
 **Best for**: Follows, Dwell time, Emotional resonance
 
 Structure:
-1. Start mid-action (not "So I was...")
-2. Quick context
-3. The turning point
-4. The lesson
+1. Start mid-action or with dialogue (skip "So I was..." or "I want to share...")
+2. Quick context—just enough to understand
+3. The turn or surprise
+4. Optional lesson (sometimes the story is enough)
 
 **Template**:
 ```
 "[Dialogue or pivotal moment]"
 
-[2-3 lines of context]
+[Brief context]
 
-[What happened next]
+[What happened]
 
-[What it taught me]
+[Optional: what you took from it—don't force a lesson if there isn't one]
 ```
 
-**Example**:
+**Example 1** (with lesson):
 ```
-"We're shutting down the company."
+"We're shutting down."
 
-Hardest email I ever sent. 47 employees. Families. Dreams.
+Sent that email to 47 people. Hardest thing I've done.
 
-But here's what I didn't expect:
+Expected anger. Got the opposite.
 
-Every single person replied thanking me. Not for the job. For being honest.
+Every single reply thanked me. Not for the job—for being straight with them.
 
-Transparency isn't just ethical. It's the only way to leave with your reputation intact.
+Turns out people forgive failure. They don't forgive being kept in the dark.
 ```
 
-**Why it works**: Narrative tension creates dwell. Emotional authenticity builds connection. Lessons give reason to follow.
+**Example 2** (no forced lesson):
+```
+"You're not ready for this role."
+
+Manager said it to me at 24. I was furious.
+
+Quit two weeks later. Started my own thing.
+
+She was right, by the way. Wasn't ready. Did it anyway.
+
+Sometimes that's how it works.
+```
+
+**Why it works**: Narrative tension creates dwell. Emotional honesty builds connection. Not forcing a neat lesson makes it feel real.
 
 ---
 
@@ -972,70 +1033,98 @@ Transparency isn't just ethical. It's the only way to leave with your reputation
 **Best for**: Shares, Replies, Practical engagement
 
 Structure:
-1. Immediate actionable content
-2. No preamble
-3. Clear application
+1. Immediate actionable content—no preamble
+2. Steps or points (vary the number)
+3. Brief closer that adds personality
 
 **Template**:
 ```
 [Action verb] [specific outcome]:
 
-[Step 1]
-[Step 2]
-[Step 3]
+[Points—not always 3]
 
-That's it. [Simple closer]
+[Brief closer with voice]
 ```
 
-**Example**:
+**Example 1** (2 steps):
 ```
-Write better emails:
+Better 1:1s with your manager:
 
-1. Start with the ask
-2. Max 5 sentences
-3. One action per email
+1. Come with an agenda (even 3 bullets is fine)
+2. Ask "What should I be doing differently?"
 
-That's it. Stop overthinking.
+Most people show up empty-handed. Don't be most people.
 ```
 
-**Why it works**: No friction. Immediate value. Easy to apply and share.
+**Example 2** (4 steps, different energy):
+```
+Fix a bad first draft:
+
+- Cut the first paragraph. Your real start is buried.
+- Delete every "very" and "really"
+- Read it out loud. If you stumble, rewrite that part.
+- Sleep on it. Fresh eyes catch everything.
+
+First drafts are supposed to be bad. That's the point.
+```
+
+**Why it works**: No friction. Immediate value. Varied structure and a closing line with personality make it feel written by a person, not assembled by a template.
 
 ---
 
-## Pattern 7: The "I Did X So You Don't Have To"
+## Pattern 7: The Effort Summary
 
 **Best for**: Dwell time, Shares, Follow
 
+The "I did X so you don't have to" phrase works but is overused. Vary it.
+
 Structure:
-1. Establish the effort you put in
-2. Distill the key findings
-3. Save them time
+1. Establish what you did (be specific)
+2. Share what you found (vary the number—not always 3)
+3. Casual closer
 
-**Template**:
+**Template variations**:
 ```
-I [did extensive thing] so you don't have to.
-
-Here are the [N] things that actually matter:
+[What you did]. [What you found]:
 
 [Findings]
 
-You're welcome.
+[Personal take or casual closer]
 ```
 
-**Example**:
-```
-I read 50 books on negotiation so you don't have to.
+**Alternative openers** (rotate these):
+- "Spent [time] on [thing]. Probably too long. Here's what stuck:"
+- "[Did thing]. Most of it was useless. Here's what wasn't:"
+- "After [extensive effort], I'd narrow it down to:"
 
-Here are the 3 things that actually matter:
+**Example 1** (classic structure, varied count):
+```
+Read 50 books on negotiation last year.
+
+Most were repetitive. Four ideas actually stuck:
 
 1. The person who cares less has more power
-2. "No" is the start, not the end
-3. Silence is your best friend
+2. "No" isn't the end—it's where the real conversation starts
+3. Silence is uncomfortable. Use it.
+4. Never split the difference (the book, but also the principle)
 
-Everything else is noise.
+Would've been faster to just read that last one.
 ```
 
-**Why it works**: Establishes authority. Saves time. Creates shareability.
+**Example 2** (different framing):
+```
+Tested 12 different morning routines over 6 months.
+
+Journaling? Didn't stick.
+Cold showers? Miserable.
+Meditation? Hit or miss.
+
+What worked: not checking my phone for the first hour.
+
+That's it. Everything else was noise I was adding to feel productive.
+```
+
+**Why it works**: Establishes authority through demonstrated effort. Saves the reader time. Casual tone makes it feel like advice from a friend, not a content template.
 
 ---
 
@@ -1045,34 +1134,41 @@ Everything else is noise.
 
 Structure:
 1. Specific prediction with timeframe
-2. Brief reasoning
-3. Optional stake ("bookmark this")
+2. Brief reasoning (casual, not corporate)
+3. Acknowledgment that you might be wrong
 
 **Template**:
 ```
-Prediction: [Specific outcome] by [timeframe]
+[Prediction with specific timeframe]
 
-Here's why:
+[Why you think this—conversational, not bullet points of jargon]
 
-[2-3 reasons]
-
-Bookmark this. Let's see who's right.
+[Invite disagreement or set a reminder]
 ```
 
-**Example**:
+**Example 1** (tech prediction):
 ```
-Prediction: 50% of SaaS companies will be AI-wrapper businesses by 2026.
+By 2027, most "AI startups" will just be thin wrappers on foundation models.
 
-Here's why:
+Not because founders are lazy. Because the models keep getting better, and building your own is expensive.
 
-- Foundation models are commoditizing
-- UX is the only moat
-- Infrastructure costs favor thin layers
+The winners will be whoever figures out distribution. The tech won't matter.
 
-Bookmark this. Check back in 2 years.
+Might be wrong. Set a reminder and roast me if I am.
 ```
 
-**Why it works**: Predictions invite commentary. Experts want to weigh in. Bookmark creates future engagement.
+**Example 2** (industry prediction, more casual):
+```
+Remote work discourse will be dead in 2 years.
+
+Not because companies will "figure it out." Because everyone will just quietly do whatever works and stop talking about it.
+
+The debate is already exhausting. It'll fade into background noise.
+
+Check back in 2026.
+```
+
+**Why it works**: Predictions invite commentary. Acknowledging uncertainty ("might be wrong") makes it feel like a genuine opinion, not a marketing statement. Experts want to weigh in either way.
 
 ---
 
@@ -1096,7 +1192,7 @@ The best posts often combine elements:
 | Curiosity Gap | Dwell, Click |
 | Personal Story | Follow, Dwell |
 | Direct Value | Share, Reply |
-| "So You Don't Have To" | Share, Follow, Dwell |
+| Effort Summary | Share, Follow, Dwell |
 | Prediction | Quote, Reply |
 
 ---
@@ -1357,15 +1453,323 @@ The algorithm learns from engagement patterns. Consistent positive signals rebui
 
 ---
 
+# Writing Like a Human, Not a Bot
+
+Algorithm optimization means nothing if your posts scream "AI wrote this." The algorithm favors genuine engagement, and users can smell inauthenticity. This section helps you write posts that are both algorithm-optimized AND authentically human.
+
+---
+
+## AI Vocabulary Blacklist
+
+These words instantly signal AI writing. Never use them:
+
+**Corporate buzzwords**:
+- "leverage", "utilize", "optimize", "synergy", "stakeholders"
+- "robust", "comprehensive", "streamlined", "scalable"
+- "cutting-edge", "best-in-class", "world-class"
+
+**AI verbal tics**:
+- "Additionally", "Furthermore", "Moreover"
+- "crucial", "essential", "vital", "key" (as adjectives before nouns)
+- "delve", "dive into", "unpack"
+- "landscape", "ecosystem", "space" (for industries)
+- "journey", "adventure" (for experiences)
+- "tapestry", "myriad", "plethora"
+- "multifaceted", "nuanced"
+- "paradigm", "paradigm shift"
+- "game-changing", "groundbreaking", "transformative", "revolutionary"
+- "unlock", "unleash", "empower"
+- "pivotal", "pivotal moment"
+- "broader implications", "overarching"
+- "It's worth noting", "It's important to note"
+- "at the end of the day"
+
+**Sycophantic openers** (never start with these):
+- "Great question!"
+- "Absolutely!"
+- "That's a fantastic point!"
+- "I love this!"
+
+**Generic positive closers** (never end with these):
+- "Success awaits!"
+- "The possibilities are endless!"
+- "I hope this helps!"
+- "Let me know if you have any questions!"
+
+---
+
+## Structural Tells to Avoid
+
+These patterns betray AI writing even when the words are fine:
+
+### The Rule of Three Trap
+AI loves exactly three things. Lists of exactly 3 items, 3 points, 3 examples. Real humans sometimes have 2 things to say. Or 4. Or 7.
+
+**AI pattern**:
+```
+Three things I learned:
+1. [Point]
+2. [Point]
+3. [Point]
+```
+
+**Human variation**:
+```
+Two things stuck with me:
+1. [Point]
+2. [Point]
+
+(The third thing everyone mentions? Overrated.)
+```
+
+### Negative Parallelism
+"Not just X, but Y" and "It's not about X, it's about Y" are AI favorites. Overuse makes writing feel formulaic.
+
+**AI pattern**:
+```
+It's not just about working hard, it's about working smart.
+```
+
+**Human alternative**:
+```
+Working smart beats working hard. Every time.
+```
+
+### Significance Inflation
+AI loves to make everything sound momentous. "Pivotal moments." "Broader implications." "Fundamental shifts." Real insights don't need inflation.
+
+**AI pattern**:
+```
+This represents a pivotal moment in the broader landscape of technological transformation with far-reaching implications.
+```
+
+**Human alternative**:
+```
+This changes things.
+```
+
+### Em Dash Overuse
+Em dashes (—) are fine occasionally. AI uses them constantly for dramatic pauses. If you have more than one em dash per post, cut some.
+
+**AI pattern**:
+```
+The secret—and this is what most people miss—is that success isn't about talent—it's about consistency.
+```
+
+**Human alternative**:
+```
+The secret is consistency. Most people miss this because they're looking for talent.
+```
+
+### Formulaic Transitions
+"Here's the thing:", "Here's why:", "Here's what I learned:" — these work but are overused. Vary your transitions or skip them entirely.
+
+**AI pattern**:
+```
+Here's what most people don't realize:
+
+Here's why this matters:
+
+Here's what you should do:
+```
+
+**Human variation**: Just say the thing. Skip the announcement.
+
+### The Perfect Structure
+AI posts often have suspiciously clean structure: hook, numbered points, neat conclusion. Real posts meander sometimes. That's okay.
+
+---
+
+## Adding Soul to Your Writing
+
+What makes writing feel human:
+
+### Express Genuine Opinions
+AI hedges. Humans commit.
+
+**AI**: "There's something to be said for both approaches, though many would argue that..."
+
+**Human**: "Option B is wrong. I've tried it. Doesn't work."
+
+### Use Contractions
+"Do not" sounds robotic. "Don't" sounds human. Same with "it is" vs "it's", "cannot" vs "can't".
+
+### Vary Rhythm Unpredictably
+AI tends toward consistent sentence lengths. Humans don't. Short sentence. Then maybe a longer one that goes on for a bit. Then short again. Fragment. Works.
+
+### Include Specific Details
+Vague claims feel AI-generated. Specific details feel real.
+
+**AI**: "I've seen many companies struggle with this challenge."
+
+**Human**: "Watched three companies blow $2M+ on this exact mistake last year. One was a client."
+
+### Allow Imperfection
+Real posts have:
+- Tangents that don't quite connect
+- Incomplete thoughts
+- Opinions stated too strongly
+- Casual asides
+
+**AI** never includes these. That's the tell.
+
+### Write Like You Talk
+Read your post out loud. Would you say this to a friend at a bar? If not, rewrite it until you would.
+
+**AI**: "I subsequently realized that the implementation of this methodology yielded superior outcomes."
+
+**Human**: "Tried it. Worked way better than I expected."
+
+---
+
+## Before & After Examples
+
+### Example 1: Insight Post
+
+**AI slop**:
+```
+I've delved deep into the landscape of productivity optimization.
+
+Here's what I discovered:
+
+1. It's not just about working harder, it's about working smarter
+2. The key is to leverage your peak energy hours
+3. Additionally, robust systems beat motivation every time
+
+This transformative insight has unlocked unprecedented results.
+
+I hope this helps! Let me know your thoughts!
+```
+
+**Human version**:
+```
+Spent years thinking I had a motivation problem.
+
+Turns out I had a systems problem.
+
+Now I don't rely on feeling like working. I just have routines that happen whether I want them to or not.
+
+8am: write. No negotiating.
+10am: meetings batched.
+2pm: deep work block.
+
+Boring? Yes. Works? Also yes.
+```
+
+### Example 2: Contrarian Take
+
+**AI slop**:
+```
+Unpopular opinion: The conventional wisdom around work-life balance is fundamentally flawed.
+
+Here's the thing—it's not about balance at all. It's about integration.
+
+This paradigm shift has been truly transformative for my journey.
+
+What are your thoughts on this crucial topic?
+```
+
+**Human version**:
+```
+"Work-life balance" assumes work and life are enemies.
+
+Mine aren't. I like what I do. Sometimes I work at 10pm because I want to, not because I have to. Sometimes I take Tuesday off to go skiing.
+
+The goal isn't equal hours. It's not resenting either side.
+```
+
+### Example 3: Resource Post
+
+**AI slop**:
+```
+I've curated the ultimate comprehensive guide to cold outreach!
+
+Here are the crucial elements:
+
+1. Personalization is key
+2. Keep it concise
+3. Follow up strategically
+
+These robust strategies will unlock your outreach potential!
+
+Like and repost if you found this valuable!
+```
+
+**Human version**:
+```
+Cold email template that actually works (used this for 3 years):
+
+Subject: quick question
+
+[Name]—saw your [specific thing]. [One genuine observation].
+
+I'm working on [relevant thing]. Think you might have thoughts.
+
+Worth a 15-min call this week?
+
+That's it. 23% reply rate. No tricks.
+```
+
+### Example 4: Story Post
+
+**AI slop**:
+```
+I want to share a pivotal moment from my entrepreneurial journey.
+
+The day my startup failed was transformative. Here's what I learned:
+
+1. Failure is not the end—it's a crucial learning opportunity
+2. Resilience is key to long-term success
+3. Every setback contains the seeds of future growth
+
+This experience fundamentally shifted my paradigm.
+
+Grateful for this journey! 🙏
+```
+
+**Human version**:
+```
+"We're out of money."
+
+Said it to my cofounder over bad coffee at a Denny's. We'd been avoiding the conversation for weeks.
+
+She just nodded. We both knew.
+
+The weird part? Relief. The uncertainty was worse than the answer.
+
+Took me six months to start something new. Took her two weeks. We're both fine now.
+
+No lesson here really. Just: it ends. And then something else starts.
+```
+
+---
+
+## Quick Humanization Checklist
+
+Before posting, check:
+
+- [ ] Zero words from the AI blacklist?
+- [ ] Varied list lengths (not always 3)?
+- [ ] No more than one em dash?
+- [ ] Using contractions naturally?
+- [ ] At least one specific detail?
+- [ ] Would you actually say this out loud?
+- [ ] Something slightly imperfect or casual?
+- [ ] No sycophantic opener or generic closer?
+
+If any answer is no, rewrite that part.
+
+---
+
 # Iteration Framework
 
 A systematic approach to improving drafts before posting. Run every draft through this checklist to optimize for the algorithm.
 
 ---
 
-## The 5-Point Signal Audit
+## The 6-Point Signal Audit
 
-For each draft, evaluate against the five signal categories:
+For each draft, evaluate against these six categories:
 
 ### 1. Reply Test
 **Question**: Will people want to respond to this?
@@ -1424,6 +1828,19 @@ For each draft, evaluate against the five signal categories:
 - [ ] Not repetitive of recent posts
 
 **If failing**: Remove engagement asks. Soften hostility. Stay on brand.
+
+### 6. Humanization Test
+**Question**: Does this sound like a real person wrote it?
+
+**Check**:
+- [ ] No AI vocabulary (see blacklist in "Writing Like a Human" section)
+- [ ] Varied structure (not always 3 points, not perfectly formatted)
+- [ ] Uses contractions naturally
+- [ ] At least one specific detail or personal touch
+- [ ] Would you say this to a friend out loud?
+- [ ] No sycophantic opener or generic closer
+
+**If failing**: Rewrite in your own voice. Add imperfection. Cut the corporate-speak.
 
 ---
 
@@ -1600,6 +2017,12 @@ Before posting:
 - [ ] Proper line breaks?
 - [ ] Length matches goal?
 - [ ] Passes visual scan?
+
+**Humanization**
+- [ ] No AI vocabulary?
+- [ ] Varied structure (not always 3 things)?
+- [ ] Uses contractions?
+- [ ] Sounds like something you'd say out loud?
 
 **Final**
 - [ ] Would I screenshot this?
