@@ -1,5 +1,7 @@
 # X Algorithm Skill
 
+https://x-algo-skill.xyz/
+
 Write viral X posts using deep knowledge of the actual recommendation algorithm.
 
 This skill gives Claude Code (and other AI tools) detailed knowledge of how X's "For You" feed algorithm works, enabling it to help you write posts optimized for maximum reach.
